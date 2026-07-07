@@ -1,0 +1,19 @@
+<svg viewBox="0 0 1200 630" xmlns="http://www.w3.org/2000/svg" font-family="IBM Plex Sans, Arial, sans-serif">
+  <rect x="0" y="0" width="1200" height="630" fill="#1f413a"/>
+  <circle cx="1040" cy="120" r="220" fill="#2f5d53" opacity="0.55"/>
+  <circle cx="150" cy="560" r="260" fill="#17322c" opacity="0.6"/>
+
+  <text x="90" y="235" font-family="Georgia, 'Times New Roman', serif" font-size="30" fill="#b8862b" font-style="italic">the secure family medication concierge</text>
+  <text x="88" y="330" font-family="Georgia, 'Times New Roman', serif" font-size="92" font-weight="700" fill="#fbfaf5">⚚ MedSentry</text>
+
+  <text x="90" y="390" font-size="20" fill="#d3dcd3">Multi-agent · Google ADK · MCP Server · Encrypted · RBAC · Consent-gated</text>
+
+  <g font-family="IBM Plex Mono, monospace" font-size="15" fill="#f1e4c8">
+    <text x="90" y="460">Kaggle — AI Agents Intensive Vibe Coding Capstone</text>
+    <text x="90" y="488">Concierge Agents track</text>
+  </g>
+
+  <g stroke="#b8862b" stroke-width="1.5">
+    <line x1="90" y1="520" x2="480" y2="520"/>
+  </g>
+</svg>

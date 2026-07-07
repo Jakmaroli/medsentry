@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>MedSentry — Secure Family Medication Concierge</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,500;0,600;1,500&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/assets/styles.css" />
+</head>
+<body>
+  <div class="app">
+    <header class="header">
+      <div class="brand">
+        <span class="brand-mark">⚚ MedSentry</span>
+        <span class="brand-tag">the secure family medication concierge</span>
+      </div>
+      <div class="header-meta">
+        <span>Patient: <strong id="patient-name">—</strong></span>
+        <span class="mode-pill" id="mode-pill">loading…</span>
+      </div>
+    </header>
+
+    <section class="timeline-card">
+      <div class="timeline-eyebrow">Today</div>
+      <div class="timeline-title">At a glance</div>
+      <div class="timeline-track" id="timeline-track"></div>
+    </section>
+
+    <section class="panels">
+      <div class="panel">
+        <div class="panel-title">Safety check</div>
+        <div id="safety-flags"></div>
+        <div class="disclaimer" id="disclaimer"></div>
+      </div>
+
+      <div class="panel">
+        <div class="panel-title">Circle of care</div>
+        <div class="circle-wrap"><div id="circle-of-care"></div></div>
+        <div class="circle-caption" id="circle-caption"></div>
+        <div class="legend">
+          <span><span class="legend-swatch"></span>shared</span>
+          <span><span class="legend-swatch dashed"></span>not shared</span>
+        </div>
+      </div>
+
+      <div class="panel">
+        <div class="panel-title">Security ledger</div>
+        <ul class="security-checks">
+          <li>Encrypted at rest (Fernet/AES)</li>
+          <li>Role-based access control</li>
+          <li>Consent-gated sharing</li>
+          <li>PII redacted before logging</li>
+        </ul>
+        <div class="role-toggle">
+          <button class="role-btn active" data-role="patient">as patient</button>
+          <button class="role-btn" data-role="caregiver">as caregiver</button>
+        </div>
+        <div id="audit-ledger"></div>
+      </div>
+    </section>
+
+    <p class="footer-note">
+      Educational decision-support demo, not medical advice — always confirm changes with a pharmacist or physician.
+      Built with Google ADK · MCP · for the Kaggle AI Agents Vibe Coding Capstone.
+    </p>
+  </div>
+
+  <script src="/assets/app.js"></script>
+</body>
+</html>

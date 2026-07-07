@@ -1,0 +1,15 @@
+services:
+  medsentry:
+    build: .
+    ports:
+      - "8080:8080"
+    environment:
+      - MEDSENTRY_DEMO_MODE=true
+      # Uncomment for live mode (also set MEDSENTRY_DEMO_MODE=false):
+      # - GOOGLE_API_KEY=${GOOGLE_API_KEY}
+      # - MEDSENTRY_SECRET_KEY=${MEDSENTRY_SECRET_KEY}
+    healthcheck:
+      test: ["CMD", "python", "-c", "import urllib.request; urllib.request.urlopen('http://localhost:8080/health')"]
+      interval: 30s
+      timeout: 3s
+      retries: 3

@@ -1,0 +1,9 @@
+services:
+  - type: web
+    name: medsentry
+    runtime: docker
+    plan: free
+    healthCheckPath: /health
+    envVars:
+      - key: MEDSENTRY_DEMO_MODE
+        value: "true"

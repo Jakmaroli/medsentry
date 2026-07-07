@@ -1,0 +1,15 @@
+# Pinned versions on purpose: hallucinated/typo'd package names ("slopsquatting")
+# are a real supply-chain risk with AI-assisted coding (course Day 4). Pinning
+# forces every install to resolve to a version we actually tested against,
+# and makes an unexpected transitive change visible in a diff instead of
+# silently swapping in whatever "latest" happens to mean today.
+
+google-adk==2.3.0         # Agent Development Kit — multi-agent orchestration (live mode only)
+mcp==1.28.1               # Model Context Protocol Python SDK (FastMCP server)
+fastapi==0.139.0
+uvicorn==0.50.2
+cryptography==46.0.6      # Fernet field-level encryption at rest
+typer==0.26.8             # Agents CLI
+rich==15.0.0              # CLI output formatting
+python-dotenv==1.2.2
+pytest==9.1.1             # test suite (tests/)

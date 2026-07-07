@@ -1,0 +1,26 @@
+{
+  "_note": "Entirely fictional demo data for local testing and the video walkthrough. No real person's information.",
+  "patient": {
+    "id": "demo-patient-001",
+    "display_name": "Asha K.",
+    "medications": [
+      {"name": "warfarin", "display": "Warfarin 5mg", "times": ["19:00"]},
+      {"name": "lisinopril", "display": "Lisinopril 10mg", "times": ["08:00"]},
+      {"name": "metformin", "display": "Metformin 500mg", "times": ["08:00", "19:00"]},
+      {"name": "sertraline", "display": "Sertraline 50mg", "times": ["08:00"]},
+      {"name": "ibuprofen", "display": "Ibuprofen 200mg (as needed)", "times": ["13:00"]}
+    ],
+    "consent": {
+      "medications": true,
+      "schedule": true,
+      "interactions": true,
+      "notes": false,
+      "audit_log": false
+    },
+    "caregiver_circle": [
+      {"name": "Rohan K.", "relationship": "son", "role": "caregiver"},
+      {"name": "Meera K.", "relationship": "daughter", "role": "caregiver"},
+      {"name": "Dr. Fernandes", "relationship": "prescriber", "role": "pharmacist"}
+    ]
+  }
+}

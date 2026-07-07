@@ -1,0 +1,89 @@
+{
+  "_disclaimer": "Educational decision-support data only. Not a substitute for a pharmacist or physician. MedSentry always surfaces this disclaimer alongside any flag. This list is intentionally small and curated for a demo — a production deployment should call a licensed clinical interaction API (e.g. a hospital formulary service) instead of this static file.",
+  "pairs": [
+    {
+      "a": "warfarin", "b": "aspirin", "severity": "major",
+      "mechanism": "Additive anticoagulant/antiplatelet effect.",
+      "risk": "Significantly increased bleeding risk.",
+      "action": "Do not combine without explicit physician supervision and monitoring."
+    },
+    {
+      "a": "warfarin", "b": "ibuprofen", "severity": "major",
+      "mechanism": "NSAID platelet inhibition plus anticoagulation.",
+      "risk": "Increased GI bleeding risk.",
+      "action": "Avoid NSAIDs; suggest acetaminophen and confirm with prescriber."
+    },
+    {
+      "a": "lisinopril", "b": "spironolactone", "severity": "moderate",
+      "mechanism": "ACE inhibitor + potassium-sparing diuretic.",
+      "risk": "Hyperkalemia (high potassium).",
+      "action": "Periodic potassium monitoring recommended by prescriber."
+    },
+    {
+      "a": "lisinopril", "b": "ibuprofen", "severity": "moderate",
+      "mechanism": "NSAIDs blunt ACE-inhibitor effect and reduce renal blood flow.",
+      "risk": "Reduced blood-pressure control; kidney strain, especially with a diuretic on board (\"triple whammy\").",
+      "action": "Prefer acetaminophen for pain; flag to prescriber if NSAID needed regularly."
+    },
+    {
+      "a": "simvastatin", "b": "amiodarone", "severity": "major",
+      "mechanism": "Amiodarone inhibits statin metabolism (CYP3A4).",
+      "risk": "Elevated statin levels; myopathy/rhabdomyolysis risk.",
+      "action": "Dose cap or alternate statin usually required — confirm with prescriber."
+    },
+    {
+      "a": "metformin", "b": "iodinated_contrast", "severity": "major",
+      "mechanism": "Contrast-related renal impairment can reduce metformin clearance.",
+      "risk": "Lactic acidosis risk around imaging procedures with IV contrast.",
+      "action": "Hold metformin around contrast imaging per radiology/prescriber protocol."
+    },
+    {
+      "a": "sertraline", "b": "phenelzine", "severity": "major",
+      "mechanism": "SSRI + MAOI serotonergic combination.",
+      "risk": "Serotonin syndrome — contraindicated combination.",
+      "action": "Never combine; requires washout period between the two under medical supervision."
+    },
+    {
+      "a": "sertraline", "b": "ibuprofen", "severity": "moderate",
+      "mechanism": "SSRIs impair platelet serotonin uptake; additive with NSAID GI effect.",
+      "risk": "Increased GI bleeding risk.",
+      "action": "Consider acetaminophen instead; discuss with prescriber if NSAID is needed."
+    },
+    {
+      "a": "levothyroxine", "b": "calcium_carbonate", "severity": "minor",
+      "mechanism": "Calcium binds levothyroxine in the gut, reducing absorption.",
+      "risk": "Reduced thyroid hormone effectiveness.",
+      "action": "Separate dosing by at least 4 hours."
+    },
+    {
+      "a": "digoxin", "b": "amiodarone", "severity": "major",
+      "mechanism": "Amiodarone raises digoxin levels via reduced clearance.",
+      "risk": "Digoxin toxicity (nausea, arrhythmia).",
+      "action": "Digoxin dose often needs reduction — prescriber must adjust and monitor levels."
+    },
+    {
+      "a": "lorazepam", "b": "oxycodone", "severity": "major",
+      "mechanism": "Additive central nervous system and respiratory depression.",
+      "risk": "Profound sedation, slowed/stopped breathing — an FDA boxed-warning combination.",
+      "action": "Avoid combining unless a prescriber has explicitly co-managed both with monitoring."
+    },
+    {
+      "a": "clopidogrel", "b": "omeprazole", "severity": "moderate",
+      "mechanism": "Omeprazole (strong CYP2C19 inhibitor) reduces clopidogrel activation.",
+      "risk": "Reduced antiplatelet protection.",
+      "action": "Consider pantoprazole as an alternative PPI; confirm with prescriber."
+    },
+    {
+      "a": "metronidazole", "b": "alcohol", "severity": "moderate",
+      "mechanism": "Disulfiram-like inhibition of alcohol metabolism.",
+      "risk": "Flushing, nausea, vomiting, palpitations.",
+      "action": "Avoid alcohol during treatment and for 48 hours after the last dose."
+    },
+    {
+      "a": "simvastatin", "b": "grapefruit", "severity": "moderate",
+      "mechanism": "Grapefruit furanocoumarins inhibit intestinal CYP3A4.",
+      "risk": "Elevated statin blood levels; myopathy risk.",
+      "action": "Avoid grapefruit/grapefruit juice while on simvastatin."
+    }
+  ]
+}
